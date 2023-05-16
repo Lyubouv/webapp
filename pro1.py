@@ -1,4 +1,8 @@
 import streamlit as st
+import sys
+
+sys.path.insert(1, "c:\users\asus\anaconda3\envs\proj_webapps\lib\site-packages (1.22.0)")
+
 from PIL import Image
 from streamlit_option_menu import option_menu
 
@@ -55,7 +59,7 @@ if selected=='Perhitungan Stoikiometri Dasar':
         massa=st.number_input('Masukkan massa zat (gram)')
         mr=st.number_input('Masukkan mr larutan (gram/mol)')
         if st.button('Hitung'):
-            Molekul=massa/mr
+            Mol=massa/mr
             st.success(f'Mol larutan sebesar {Mol} mol')
     elif option=='Molaritas (M)':
         st.image('https://1.bp.blogspot.com/-SN9gohItE8A/XB-UqkON7FI/AAAAAAAAAlk/7TNR4tugoeUNPHiW2iJk0_uojqJ0CaIgQCEwYBhgL/s1600/rumus-menghitung-molaritas.JPG', 'rumus mencari molaritas')
