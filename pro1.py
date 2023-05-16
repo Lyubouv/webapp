@@ -1,7 +1,7 @@
 import streamlit as st
 import sys
 
-sys.path.insert(1, "c:\users\asus\anaconda3\envs\proj_webapps\lib\site-packages (1.22.0)")
+sys.path.insert(1, "c:\users\asus\anaconda3\envs\proj_webapps\lib\site-packages")
 
 from PIL import Image
 from streamlit_option_menu import option_menu
